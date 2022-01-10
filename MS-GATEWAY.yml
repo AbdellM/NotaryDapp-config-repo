@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: GATEWAY-SERVICE
+    name: MS-GATEWAY
   cloud:
     gateway:
       default-filters:
