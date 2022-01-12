@@ -27,6 +27,12 @@ spring:
             - Path=/ms-auth/**
           filters:
             - RewritePath=/ms-auth(?<segment>/?.*), $\{segment}
+        - id: ms-eth
+          uri: http://localhost:8083
+          predicates:
+            - Path=/ms-eth/**
+          filters:
+            - RewritePath=/ms-eth(?<segment>/?.*), $\{segment}
 
 eureka:
   instance:
